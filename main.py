@@ -3,18 +3,18 @@ from decimal import Decimal
 import os, sys
 
 C_BLACK = (0, 0, 0)
-C_BROWN = (128, 96, 0)
-C_RED = (255, 0, 0)
-C_ORANGE = (255, 130, 0)
-C_YELLOW = (255, 255, 0)
-C_GREEN = (0, 176, 80)
-C_BLUE = (0, 112, 192)
-C_VIOLET = (208, 0, 218)
-C_GREY = (128, 128, 128)
+C_BROWN = (137, 64, 0)
+C_RED = (237, 0, 0)
+C_ORANGE = (244, 156, 0)
+C_YELLOW = (247, 246, 0)
+C_GREEN = (159, 195, 44)
+C_BLUE = (11, 64, 158)
+C_VIOLET = (134, 0, 194)
+C_GREY = (88, 94, 97)
 C_WHITE = (255, 255, 255)
 
-C_GOLD = (234, 178, 0)
-C_SILVER = (201, 201, 201)
+C_GOLD = (189, 163, 42)
+C_SILVER = (65, 70, 72)
 C_NONE = (220, 195, 171)
 
 T_1PCT = C_BROWN
