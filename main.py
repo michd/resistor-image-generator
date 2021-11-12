@@ -17,6 +17,11 @@ C_GOLD = (189, 163, 42)
 C_SILVER = (65, 70, 72)
 C_NONE = (220, 195, 171)
 
+T_FIFTIETH_PCT = C_YELLOW
+T_TWENTIETH_PCT = C_ORANGE
+T_TENTH_PCT = C_VIOLET
+T_QUARTER_PCT = C_BLUE
+T_HALF_PCT = C_GREEN
 T_1PCT = C_BROWN
 T_2PCT = C_RED
 T_5PCT = C_GOLD
@@ -119,19 +124,12 @@ def draw_resistor(draw, value, tolerance):
     f = '{:.1E}'
     multiplier_offset = 1
 
-    if tolerance == T_5PCT:
+    if tolerance in [ T_5PCT, T_10PCT, T_20PCT ]:
         f = '{:.1E}'
         multiplier_offset = 1
-    elif tolerance == T_10PCT:
-        f = '{:.1E}'
-        multiplier_offset = 1
-    elif tolerance == T_20PCT:
-        f = '{:.1E}'
-        multiplier_offset = 1
-    elif tolerance == T_1PCT:
-        f = '{:.2E}'
-        multiplier_offset = 2
-    elif tolerance == T_2PCT:
+    elif tolerance in [ 
+            T_FIFTIETH_PCT, T_TWENTIETH_PCT, T_TENTH_PCT, T_QUARTER_PCT, T_HALF_PCT, T_1PCT, T_2PCT 
+            ]:
         f = '{:.2E}'
         multiplier_offset = 2
     else:
